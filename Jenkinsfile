@@ -45,9 +45,6 @@ node {
        build job: 'static-code-analysis'
    }
 	
-
-}
-
     // Post-build actions
     post {
         always {
@@ -63,3 +60,4 @@ node {
             echo 'This will run only if the build fails'
         }
     }									  
+									  }
