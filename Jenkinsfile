@@ -32,7 +32,7 @@ node {
    }
    
    stage('Almost Done!') {
-      def response = input message: 'Whatcha think?', parameters: [choice(choices: 'Yes\nNo', description: 'Proceed or Abort?', name: 'Wasn\'t that cool?')]
+      def response = input message: 'Whatcha think?', parameters: [choice(choices: 'Yes\nNo', description: 'Proceed or Abort?', name: 'Wasn't that cool?')]
         
       if (response=="Yes") {
          echo "I agree!"
