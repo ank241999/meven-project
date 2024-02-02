@@ -47,3 +47,19 @@ node {
 	
 
 }
+
+    // Post-build actions
+    post {
+        always {
+            // You can add any post-build actions here
+            echo 'This will always run'
+        }
+        success {
+            // Actions to be performed if the build is successful
+            echo 'This will run only if the build is successful'
+        }
+        failure {
+            // Actions to be performed if the build fails
+            echo 'This will run only if the build fails'
+        }
+    }									  
